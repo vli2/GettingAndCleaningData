@@ -48,27 +48,27 @@ You should create one R script called run_analysis.R that does the following.
 
 ----------------------------------------------------------------------
 ## Variables used
-- subject_train: data frame which contains subject training data set.
-- subject_testL: data frame which contains subject test data set
-- activity_labels: data frame which contains activity labels.
+- subject_train - data frame which contains subject training data set.
+- subject_test - data frame which contains subject test data set
+- activity_labels - data frame which contains activity labels.
 - y_train - data frame which contains training data labels.
 - y_test - data frame which contains test data labels.
 - x_train - data frame which contains training data set.
 - x_test - data frame which contains test data set.
 - subject - data frame which contains merged subject test set and training set.
 - y - data frame which contains merged training labels and test labels. 
-y_labels - data frame which contains merged activity labels
+- y_labels - data frame which contains merged activity labels
 - x - data frame which contains merged training and test data sets.
-subject_data - data frame which contains merged subject, labels, and data sets.
-features - data frame which contains measurement information.
-features_mean_std - data frame which is a subset of features and 
+- subject_data - data frame which contains merged subject, labels, and data sets.
+- features - data frame which contains measurement information.
+- features_mean_std - data frame which is a subset of features and 
                     tells which variables are means and standard deviations.
-mean_std_columns - vector which contains the column names of mean and standard deviation variables.
-subject_mean_std_data - data frame which is a subset of subject_data and only contains mean and 
+- mean_std_columns - vector which contains the column names of mean and standard deviation variables.
+- subject_mean_std_data - data frame which is a subset of subject_data and only contains mean and 
                         standard deviation features related data.
-df - data frame which excludes 'NA' values from subject_mean_std_data.
-melt_df - data frame which contains melted data set.
-tidy_data - data frame which contains cleaned data with the average of each variable 
+- df - data frame which excludes 'NA' values from subject_mean_std_data.
+- melt_df - data frame which contains melted data set.
+- tidy_data - data frame which contains cleaned data with the average of each variable 
 		   for each actvity and each subject
 		   
 ------------------------------------------------------------------------
