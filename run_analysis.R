@@ -1,3 +1,4 @@
+# Getting and Cleaning Data Project
 
 # set working directory
 wrkdir <- getwd()
