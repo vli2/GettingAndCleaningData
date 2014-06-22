@@ -35,9 +35,6 @@ y_train <- read.table(file.path(data_dir, "train", "y_train.txt"))
 y_test  <- read.table(file.path(data_dir, "test" , "y_test.txt" ))
 
 # read activity data - X files
-#x_train <-data.table(read.table(file.path(data_dir,"train", "X_train.txt")))
-#x_test <- data.table(read.table(file.path(data_dir,"test", "X_test.txt")))
-
 x_train <-read.table(file.path(data_dir,"train", "X_train.txt"))
 x_test <- read.table(file.path(data_dir,"test", "X_test.txt"))
 
@@ -98,9 +95,8 @@ str(subject_mean_std_data)
 # for each activity and each subject
 df <- subject_mean_std_data[complete.cases(subject_mean_std_data),]
 melt_df <- melt(df, id = c("Subject_Id", "Activity"))
-#tidy_data <- df[, mean(df[4:69]),by=list(Subject_Id, Activity_Id)]
 tidy_data <- dcast(melt_df, Subject_Id + Activity ~ variable, mean)
 #str(tidy_data)
-#head(tidy_data)
+head(tidy_data)
 # save data into a text file
 write.table(tidy_data, "tidy_data.txt", sep="\t")
