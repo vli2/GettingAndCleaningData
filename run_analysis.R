@@ -5,6 +5,7 @@ wrkdir <- getwd()
 wrkdir
 
 # download and unzip the file.
+# Note: this program has been tested on Windows platform.  If you use MAC, you may need to modify the code.
 # the unzipped files are in fole 'UCI HAR Dataset'
 
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
