@@ -28,7 +28,7 @@ subject_test  <- read.table(file.path(data_dir, "test" , "subject_test.txt" ))
 
 # read activity labels
 activity_labels <- read.table(file.path(data_dir, "./", "activity_labels.txt"))
-head(activity_labels)
+str(activity_labels)
 
 # read test and training labels - y files
 y_train <- read.table(file.path(data_dir, "train", "y_train.txt"))
@@ -43,7 +43,7 @@ x_test <- read.table(file.path(data_dir,"test", "X_test.txt"))
 # merge Subject data
 subject  <- rbind(subject_train, subject_test)
 setnames(subject, "V1", "Subject_Id")
-head(subject)
+str(subject)
 
 # Merge y labels
 y <- rbind(y_train, y_test)
@@ -53,11 +53,11 @@ y <- rbind(y_train, y_test)
 y_labels <- (merge(y, activity_labels, by="V1"))
 setnames(y_labels, "V1", "Activity_Id")
 setnames(y_labels, "V2", "Activity")
-head(y_labels)
+str(y_labels)
 
 # merge x data
 x <- rbind(x_train, x_test)
-head(x)
+str(x)
 
 # Merge subject with x and y train/test data
 subject_data <- cbind(subject, y_labels, x)
@@ -69,7 +69,7 @@ head(subject_data)
 # read features.txt which tells which variables are mean/std measurements
 features <- read.table(file.path(data_dir, "./", "features.txt"))
 setnames(features, names(features), c("Feature_Id", "Feature"))
-head(features)
+str(features)
 
 # subset measurements which are means and standard deviations
 features_mean_std <- subset(features, grepl("mean\\(\\)|std\\(\\)", features$Feature))
@@ -96,7 +96,6 @@ str(subject_mean_std_data)
 df <- subject_mean_std_data[complete.cases(subject_mean_std_data),]
 melt_df <- melt(df, id = c("Subject_Id", "Activity"))
 tidy_data <- dcast(melt_df, Subject_Id + Activity ~ variable, mean)
-#str(tidy_data)
-head(tidy_data)
+str(tidy_data)
 # save data into a text file
 write.table(tidy_data, "tidy_data.txt", sep="\t")
