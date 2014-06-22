@@ -1,9 +1,5 @@
-GettingAndCleaningData
-======================
-
-coursera Data Science track
-
 # Getting and Cleaning Data Project
+coursera Data Science track
 
 ## This repo is for Getting and Cleaning Data project.  
 
