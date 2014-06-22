@@ -15,7 +15,8 @@ It contains the following files:
 Note: this script is running and tested on a Windows 8 platform.  If you're using MAC, you may need to modify
 the code accordingly or manaully download and unzip the file and run the rest of R commands.
 
-To run run_analysis.R, save the script into your local drive in a separate folder.
+To run run_analysis.R, save the script into your R working directory on your PC.  
+Run script from RStudio.  The output file tidy_data.txt will be produced in your current directory/folder.
 
 The script will perform the following tasks (not necessarily in the exact same order - see CodeBook.md for details)
 
