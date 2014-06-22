@@ -48,28 +48,28 @@ You should create one R script called run_analysis.R that does the following.
 
 ----------------------------------------------------------------------
 ## Variables used
-- subject_train - data frame which contains subject training data set.
-- subject_test - data frame which contains subject test data set
-- activity_labels - data frame which contains activity labels.
-- y_train - data frame which contains training data labels.
-- y_test - data frame which contains test data labels.
-- x_train - data frame which contains training data set.
-- x_test - data frame which contains test data set.
-- subject - data frame which contains merged subject test set and training set.
-- y - data frame which contains merged training labels and test labels. 
-- y_labels - data frame which contains merged activity labels
-- x - data frame which contains merged training and test data sets.
-- subject_data - data frame which contains merged subject, labels, and data sets.
-- features - data frame which contains measurement information.
-- features_mean_std - data frame which is a subset of features and 
-                    tells which variables are means and standard deviations.
-- mean_std_columns - vector which contains the column names of mean and standard deviation variables.
+- subject_train - data frame which contains subject training data set (7352 obs. of  1 variable)
+- subject_test - data frame which contains subject test data set (2947 obs. of  1 variable)
+- activity_labels - data frame which contains activity labels (6 obs. of  2 variables)
+- y_train - data frame which contains training data labels (7352 obs. of  1 variable)
+- y_test - data frame which contains test data labels (2947 obs. of  1 variable)
+- x_train - data frame which contains training data set (7352 obs. of  561 variables)
+- x_test - data frame which contains test data set (2947 obs. of  561 variables)
+- subject - data frame which contains merged subject test set and training set (10299 obs. of  1 variable)
+- y - data frame which contains merged training labels and test labels (10299 obs. of  1 variable)
+- y_labels - data frame which contains merged activity labels (10299 obs. of  2 variables)
+- x - data frame which contains merged training and test data sets (10299 obs. of  561 variables)
+- subject_data - data frame which contains merged subject, labels, and data sets (10299 obs. of  564 variables)
+- features - data frame which contains measurement information (561 obs. of  2 variables)
+- features_mean_std - data frame which is a subset of features and tells which variables 
+                      are means and standard deviations (66 obs. of  2 variables)
+- mean_std_columns - vector which contains the column name indexes of mean and standard deviation variables.
 - subject_mean_std_data - data frame which is a subset of subject_data and only contains mean and 
-                        standard deviation features related data.
-- df - data frame which excludes 'NA' values from subject_mean_std_data.
-- melt_df - data frame which contains melted data set.
+                        standard deviation features related data (10299 obs. of  69 variables)
+- df - data frame which excludes 'NA' values from subject_mean_std_data (10299 obs. of  69 variables)
+- melt_df - data frame which contains melted data set (690033 obs. of  4 variables)
 - tidy_data - data frame which contains cleaned data with the average of each variable 
-		   for each actvity and each subject
+		   for each actvity and each subject (35 obs. of  69 variables)
 		   
 ------------------------------------------------------------------------
 ## Steps to clean and transform data
