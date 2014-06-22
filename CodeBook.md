@@ -48,20 +48,17 @@ You should create one R script called run_analysis.R that does the following.
 
 ----------------------------------------------------------------------
 ## Variables used
-subject_train - data frame which contains subject training data set.
-
-subject_test - data frame which contains subject test data set
-
-activity_labels - data frame which contains activity labels.
-
-y_train - data frame which contains training data labels.
-y_test - data frame which contains test data labels.
-x_train - data frame which contains training data set.
-x_test - data frame which contains test data set.
-subject - data frame which contains merged subject test set and training set.
-y - data frame which contains merged training labels and test labels. 
+- subject_train: data frame which contains subject training data set.
+- subject_testL: data frame which contains subject test data set
+- activity_labels: data frame which contains activity labels.
+- y_train - data frame which contains training data labels.
+- y_test - data frame which contains test data labels.
+- x_train - data frame which contains training data set.
+- x_test - data frame which contains test data set.
+- subject - data frame which contains merged subject test set and training set.
+- y - data frame which contains merged training labels and test labels. 
 y_labels - data frame which contains merged activity labels
-x - data frame which contains merged training and test data sets.
+- x - data frame which contains merged training and test data sets.
 subject_data - data frame which contains merged subject, labels, and data sets.
 features - data frame which contains measurement information.
 features_mean_std - data frame which is a subset of features and 
