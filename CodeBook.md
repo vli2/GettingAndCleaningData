@@ -66,7 +66,6 @@ You should create one R script called run_analysis.R that does the following.
 - mean_std_columns - vector which contains the column name indexes of mean and standard deviation variables.
 - subject_mean_std_data - data frame which is a subset of subject_data and only contains mean and 
                         standard deviation features related data (10299 obs. of  69 variables)
-- df - data frame which excludes 'NA' values from subject_mean_std_data (10299 obs. of  69 variables)
 - melt_df - data frame which contains melted data set (690033 obs. of  4 variables)
 - tidy_data - data frame which contains cleaned data with the average of each variable 
 		   for each actvity and each subject (35 obs. of  69 variables)
