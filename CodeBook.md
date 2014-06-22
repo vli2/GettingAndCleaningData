@@ -49,8 +49,11 @@ You should create one R script called run_analysis.R that does the following.
 ----------------------------------------------------------------------
 ## Variables used
 subject_train - data frame which contains subject training data set.
+
 subject_test - data frame which contains subject test data set
+
 activity_labels - data frame which contains activity labels.
+
 y_train - data frame which contains training data labels.
 y_test - data frame which contains test data labels.
 x_train - data frame which contains training data set.
